@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    min-height: 100vh;
+    /* background-image: url(./img/christmas-balls-6837253_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    background: url(./img/christmas-balls-6837253_1920.jpg) center/cover no-repeat fixed;
+}
+body{
+    backdrop-filter: blur(200px);
+    min-height: 100vh;
+}
+nav{
+    background-color: rgba(255, 217, 0, 0.753);
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 10%;
+}
+.nav-logo{
+    width: 70px;
+}
+nav ul{
+    display: flex;
+    gap: 3.5em;
+    list-style: none;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    text-shadow: 0 2px;
+    transform: scale(1.2, 1.2);
+}
+nav ul :hover{
+    text-decoration: underline double;
+    text-transform: uppercase;
+    color: rgba(255, 0, 0, 0.541);
+}
+.social-icons a i{
+    color: rgb(211, 0, 0);
+    font-size: 1.3em;
+}
+.social-icons a i:hover{
+    color: blue;
+    transform: scale(1.2, 1.2);
+    box-shadow: 0 2px 10px rgb(255, 255, 255, 0.235);
+    transition: all .3s ease-in-out;
+}
+.social-icons{
+    background-color: rgba(255, 255, 255, 0.705);
+    padding: 10px 6px;
+    border-radius: 5px;
+    display: flex;
+    gap: 1.2em;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.085);
+}
+.services h2{
+display: flex;
+justify-content: center;
+}
+.services-forms form fieldset{
+    background-color: rgba(17, 240, 84, 0.294);
+    padding: 10px 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 23em;
+    width: 20em;
+    border-radius: 25px;  
+}
+.serives-forms form{
+    width: 50%;
+    border-radius: 2px;
+    border-color: blue;
+}
+
+.serives-forms form button{
+    width: 20px;
+}
+.serives-forms form legend{
+    display: flex;
+    align-items: center;
+}

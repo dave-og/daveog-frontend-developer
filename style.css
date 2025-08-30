@@ -1,0 +1,256 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    min-height: 100vh;
+    /* background-image: url(./img/christmas-balls-6837253_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    background: url(./img/christmas-balls-6837253_1920.jpg) center/cover no-repeat fixed;
+}
+body{
+    backdrop-filter: blur(200px);
+    min-height: 100vh;
+}
+nav{
+    background-color: rgba(255, 217, 0, 0.753);
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 10%;
+}
+.nav-logo{
+    width: 70px;
+}
+nav ul{
+    display: flex;
+    gap: 3.5em;
+    list-style: none;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    text-shadow: 0 2px;
+    transform: scale(1.2, 1.2);
+}
+nav ul :hover{
+    text-decoration: underline double;
+    text-transform: uppercase;
+    color: rgba(255, 0, 0, 0.541);
+}
+.social-icons a i{
+    color: rgb(211, 0, 0);
+    font-size: 1.3em;
+}
+.social-icons a i:hover{
+    color: blue;
+    transform: scale(1.2, 1.2);
+    box-shadow: 0 2px 10px rgb(255, 255, 255, 0.235);
+    transition: all .3s ease-in-out;
+}
+.social-icons{
+    background-color: rgba(255, 255, 255, 0.705);
+    padding: 10px 6px;
+    border-radius: 5px;
+    display: flex;
+    gap: 1.2em;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.085);
+}
+/* ######### MAIN STYLING ######### */
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 5em;
+    align-items: center;
+}
+.main-1 .main-2{
+    width: 10%;
+}
+.main-1{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.main-1 .social-icons{
+    max-width: 60%;
+    justify-content: center;
+}
+.main-1 h3{
+    color: white;
+}
+.main-1 h1{
+    color: white;
+}
+.main-btns{
+    display: flex;
+    gap: 1.2em;
+}
+.main-btns a{
+    background-color: rgba(255, 255, 255, 0.294);
+    color: white;
+    padding: 10px 24px;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all .3s ease-out;
+}
+.main-btns a :hover{
+    color: wheat;
+    transform: scale(1.2, 1.2);
+    text-shadow: 0 2px 10px rgba(0,0,0,0.124);
+}
+.main-2 img{
+    width: 100%;
+}
+/*####### ABOUT STYLING ########  */
+.tools img{
+    width: 50px;
+}  
+.tools img :hover{
+    box-shadow: 0.12px rgba(0, 0, 0, 0.163);
+    transform: scale(1.1, 1.1);
+}              
+.tools{
+    margin-top: 2em;
+    display: flex;
+    gap: 1.2em;
+}
+.about-me header{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+.about-me header h1{
+    font-size: 3.5em;
+    color: wheat;
+}
+.about-me header p{
+    width: 40%;
+    text-align: center;
+    color: #f3f3f3;
+    margin-top: 1em;
+}
+.about-me header img{
+    background-color: rgba(255, 255, 255, 0.534);
+    padding: 10px;
+    margin-top: 1em;
+    border-radius: 100%;
+}
+.about-me div img{
+    width: 70px;
+}
+.about-me div{
+    background-color: rgba(255, 255, 255, 0.143);
+    backdrop-filter: blur(30px);
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    gap: 1em;
+}    
+.about-me{
+    display: flex;
+    justify-content: space-between;
+}
+.about-what-i-do{
+display: flex;
+flex-direction: column;
+gap: 1.3em;
+padding-right: 15px;
+}
+.about-me header, .about-what-i-do{
+    width: 40%;
+}
+.about-what-i-do div a {
+    text-decoration:none;
+    font-size: 1.2em;
+    color: white;
+}
+footer{
+    background-color: rgba(255, 255, 255, 0.527);
+    backdrop-filter: ;
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+   /* #####  MEDIA QUERY  ###### */
+   @media(max-width: 750px){
+     .nav-links{
+         display: none;
+     }
+     .main-1 img{
+         display: flex;
+         justify-content: space-between;
+     }
+     .tools{
+         margin-top: 0.5em;
+     }
+    .about-me header h1{
+         font-size: 2.8em;
+         padding-left: 2px;
+     }
+     .about-me{
+         display: flex;
+         
+     }
+   }
+@media (max-width:420px){
+    .nav-links{
+        display: none;
+        
+    }
+    main{
+        flex-direction: column;
+    }
+    .main-1, .main-2{
+        width: 150%
+    }
+    .about-me{
+        flex-direction: column;
+        gap: 2em;
+        align-items: center;
+    }
+    .about-me header, .about-what-i-do{
+        width: 90%;
+    }
+    .main-1{
+        margin: 0;
+    }
+    .main-1 h1{
+        font-size: 1.5em;
+        margin: 0;
+        width: 50%;
+        font-weight: 500;
+    }
+    .main-btns a {
+        width: 100%;
+        margin: 0;
+        font-size: 12px;
+    }
+    .tools img{
+        margin: 0.8em o;
+    }
+    .about-me header h1{
+        font-size:2em ;
+        font-weight: bolder;
+    }
+    .about-me header p{
+        width: 50%;
+    }
+    .about-me div{
+        width: 100%;
+    }
+    .tools{
+        margin-top: 1em;
+    }
+}
+
+   
